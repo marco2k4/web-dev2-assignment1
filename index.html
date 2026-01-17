@@ -6,76 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SD Web 2 Assignment 1</title>
   <link rel="stylesheet" href="main.css" />
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
 </head>
-<div>
+
+<body>
   <div>
     <nav>
       <div><a href="index.html">Home</a></div>
+      <div><a href="index.html">Contact us</a></div>
+      <div><a href="index.html">Services</a></div>
+      <div><a href="index.html">Help</a></div>
       <!-- Create a list with placeholder links for 3 other pages -->
+      <div><a href="about.html">About</a></div>
+      <div><a href="portfolio.html">Portfolio</a></div>
+      <div><a href="blog.html">Blog</a></div>
     </nav>
   </div>
-  <div>
-    <div>
+  
+  <main>
+    <header>
       <h1>SAIT Software Developer Program Web 2 Assignment 1</h1>
       <p>
         Complete the JavaScript exercises below. Check the console for output
         and fill in the results on this page.
       </p>
-    </div>
-    <div id="exercise-1">
-      <h1>Exercise 1: Print Character Names</h1>
+    </header>
+    
+    <section id="exercise-1">
+      <h2>Exercise 1: Print Character Names</h2>
       <p>Print out the names of each character in the console.</p>
       <div class="output">
-        <h1>Results:</h1>
+        <h3>Results:</h3>
         <ul id="names-list">
           <!-- Character names will be populated here -->
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div id="exercise-2">
-      <h1>Exercise 2: Filter by Age</h1>
+    <section id="exercise-2">
+      <h2>Exercise 2: Filter by Age</h2>
       <p>Print out the names of characters whose age is less than 40.</p>
       <div class="output">
-        <h1>Results:</h1>
+        <h3>Results:</h3>
         <ul id="young-characters-list">
           <!-- Filtered character names will be populated here -->
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div id="exercise-3">
-      <h1>Exercise 3: Reusable Function for Lists</h1>
+    <section id="exercise-3">
+      <h2>Exercise 3: Reusable Function for Lists</h2>
       <p>
         Create a function that takes any array and renders a list of character names on the page.
       </p>
       <div class="output">
-        <h1>Results:</h1>
+        <h3>Results:</h3>
         <ul id="function-list">
           <!-- Function-generated list will be populated here -->
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div id="exercise-4">
-      <h1>Exercise 4: Age Filter Function</h1>
+    <section id="exercise-4">
+      <h2>Exercise 4: Age Filter Function</h2>
       <p>
         Create a function that takes an array and an age threshold, then displays characters below that age.
       </p>
       <div class="output">
-        <h1>Results:</h1>
+        <h3>Results:</h3>
         <ul id="age-filter-list">
           <!-- Age-filtered results will be populated here -->
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div id="exercise-5">
-      <h1>Exercise 5: Error Handling</h1>
+    <section id="exercise-5">
+      <h2>Exercise 5: Error Handling</h2>
       <p>Add error handling to check if objects have a "name" property.</p>
       <div class="output">
-        <h1>Results:</h1>
+        <h3>Results:</h3>
         <ul id="error-handling-list">
           <!-- Error-handled results will be populated here -->
         </ul>
@@ -83,13 +92,13 @@
           <!-- Error messages will be displayed here -->
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="exercise-6">
-      <h1>Exercise 6: Test Error Handling</h1>
+    <section id="exercise-6">
+      <h2>Exercise 6: Test Error Handling</h2>
       <p>Test your error handling by using a broken array.</p>
       <div class="output">
-        <h1>Results:</h1>
+        <h3>Results:</h3>
         <ul id="broken-array-list">
           <!-- Broken array test results will be populated here -->
         </ul>
@@ -97,38 +106,72 @@
           <!-- Error messages from broken array will be displayed here -->
         </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <h1>Article Collection</h1>
-      </div>
+    </section>
+    
+    <section>
+      <header>
+        <h2>Article Collection</h2>
+      </header>
       <!-- responsible for layout of articles -->
-      <div>
+      <div class="articles-container">
         <!-- specific article -->
-        <div>
-          <div>
-            <h1>Article Title</h1>
-            <p></p>
-            <img src="" alt="" />
-            <div>
+        <article>
+          <header>
+            <h3>Malicious Chrome Extension Drains Crypto Via Secret API Keys</h3>
+            <img src= "" alt="Malicious Chrome Extension Image" />
+            <div class="author-info">
+              <p>Published on the Chrome Web Store on September 1, 2025, by an entity known as jorjortan142, the extension promised to simplify the complex process of managing API keys for high-frequency trading. Instead, it systematically looted the accounts of its users.</p>
               <!-- Author information -->
             </div>
-          </div>
-          <div>
+          </header>
+          
+          <div class="article-content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam, iure neque quisquam esse itaque natus fuga provident ad et! Esse, maxime ab deleniti nemo voluptates, incidunt assumenda nesciunt odio delectus, ipsum rem dolores ducimus laudantium quas magnam ad cupiditate tempore quis? Provident fuga nobis delectus nemo. Consectetur exercitationem sequi pariatur rerum soluta mollitia dolor nam officia cupiditate iusto animi qui a voluptate eligendi aut perspiciatis quam numquam perferendis repellendus dolore, ratione aliquam? Cumque minima blanditiis maiores, quia ea sunt quam consectetur sit illo iusto eligendi modi fugiat. Quisquam laborum culpa odit dignissimos dolor repudiandae facilis sapiente quasi debitis quas!
+              A seemingly helpful tool for cryptocurrency traders has been exposed as a sophisticated wallet-draining trap. Socket's Threat Research Team has identified a malicious Google Chrome extension, MEXC API Automator, that quietly hijacks user accounts on the MEXC exchange to steal funds.
+            </p>
+            <p>
+              Published on the Chrome Web Store on September 1, 2025, by an entity known as jorjortan142, the extension promised to simplify the complex process of managing API keys for high-frequency trading. Instead, it systematically looted the accounts of its users.
+            </p>
+            <p>
+              The genius of the attack lay in its deception. Users installing the extension believed they were getting a utility to automate trade execution. In reality, the software was a Trojan horse designed to grant the attackers total control.
+            </p>
+            <p>
+              According to the report, the extension "programmatically creates new MEXC API keys, enables withdrawal permissions, hides that permission in the user interface (UI), and exfiltrates the resulting API key and secret to a hardcoded Telegram bot controlled by the threat actor".
+            </p>
+            <p>
+              This manipulation of the UI is particularly dangerous. Even if a vigilant user checked their settings, the extension would display the withdrawal permissions as "disabled," while in the background, the server-side reality was the opposite. "The extension ensures the server side withdrawal permission is enabled while it appears disabled in the UI".
+            </p>
+            <p>
+              Socket's analysis of the code revealed interesting artifacts pointing to the malware's origin. The researchers found numerous inline comments written in Russian, such as "Основная автоматизация" (main automation) and "Мониторинг изменений классa" (monitoring changes of the class).
+            </p>
+            <p>
+              "Russian language comments are frequent and concentrated around key logic, which strongly suggests that the threat actor behind the malicious Chrome extension is a Russian speaker," the researchers noted, adding that this evidence supports a "moderate confidence assessment" linking the tool to a broader cluster of crypto-focused threats.
+            </p>
+            <p>
+              This cluster also connects to the "SwapSushi" brand, which appears across Telegram bots and YouTube channels linked to the same actor.
+            </p>
+            <p>
+              By installing the extension, users effectively handed over their digital keys. "Any MEXC user who installs MEXC API Automator and allows it to create an API key effectively hands full programmatic control of their account to the threat actor".
+            </p>
+            <p>
+              The attackers didn't need passwords or 2FA codes; they simply rode the user's own authenticated session to generate the keys they needed to drain the vaults.
+            </p>
+            <p>
+              Socket has notified Google of the malicious extension.
             </p>
           </div>
-          <div>
-            <p>final info about the article</p>
-          </div>
-        </div>
+          
+          <footer>
+            <p>For more information, visit the original source or contact security experts. </p>
+          </footer>
+        </article>
       </div>
-    </div>
-  </div>
-  <div>
+    </section>
+  </main>
+  
+  <footer>
     <p>&copy; 2025 SAIT</p>
-  </div>
-</div>
+  </footer>
+</body>
 
 </html>
